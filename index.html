@@ -27,16 +27,16 @@
       <div class="navBar">
         <div class="nav-left">
           <div>
-            <a href="LinkedIn_proj.html">
+            <a href="index.html">
               <img
                 src="./R.png"
-                style="width: 34px; margin-right: 8px;margin-top:3px ;"
+                style=""
               />
             </a>
           </div>
           <div class="nav-search">
             
-            <i class="fa-solid fa-magnifying-glass" style="color:black;height:35px;border-radius:4px; display:flex;align-items:center;margin-left:10px;" ></i>
+            <i class="fa-solid fa-magnifying-glass" style="" ></i>
             <div id="input-hover">
               <input
                 type="text"
@@ -84,9 +84,7 @@
             <div> <span>Notifications</span></div>
               </a >
             </div>
-            <div class="nav-icon" onclick="toggleMenu()" >
-              <img src="./myphoto.jpg" class="user-icon" />
-            </div>
+            
             <div id="list-menu" onmouseclick="">
               <div class="profile-menu">
                 <div class="user-info">
@@ -124,6 +122,9 @@
             </div>
           </div>
         </div>
+        <div class="nav-icon" onclick="toggleMenu()" >
+          <img src="./myphoto.jpg" class="user-icon" />
+        </div>
         <div class="line"></div>
         <div class="grid" ><i class="fa-solid fa-grip-vertical fa-2x" style="height: 30%;"></i><i class="fa-solid fa-grip-vertical fa-2x " style="width:23px;"></i></div>
       </div>
@@ -136,8 +137,8 @@
             <div><img src="./rrr.jpg" style="" class="cover-img"></div>
             <div class="my-profile">
               <img src="./myphoto.jpg">
-              <h4 style=" margin-left:11%;color:#222;margin-top:1rem;">Moustafa Abdelhady</h4>
-              <h5 style="padding-top:3%;  margin-left:15%;color:#777">Frontend Develober</h5>
+              <h4 style=" ">Moustafa Abdelhady</h4>
+              <h5 style="">Frontend Develober</h5>
               <hr style="margin:1rem 0;">
               <ul>
                 <li>Connections <span style="font-weight: bold; ">35</span></li>
@@ -358,6 +359,7 @@
       <!----------right-side------------->
       <div class="right-side">
         <div class="add-feed">
+          <span style="clear:both"></span>
           <h5>Add to your feed<span class="events"><i class="fa-solid fa-address-book"></i></span></h5>
           <div class="follow-box">
             <div><img src="./IMG_0089.JPG" class="follow-icon"/></div>
@@ -396,25 +398,27 @@
         
         
       </div>
-      <div class="photo-bar">
-        <img src="./AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" style="width:100% " alt="">
-      </div>
-      <div class="partners">
-        <a href="#">About</a>
-        <a href="#">Accessibility</a>
-        <a href="#">Help Center</a>
-        <a href="#">Privacy & Terms</a>
-        <a href="#">Ad Choice</a>
-        <a href="#">Advertising</a>
-        <a href="#">Business Services</a>
-        <a href="#">Get the Linkedin app</a>
-        <a href="#">More</a>
-        <div class="copyright">
-          <h4>Linked</h4><img src="./R.png" alt="">
-          <p> LinkedIn Corporation © 2022</p>
 
+      <div class="sticky">
+        <div class="photo-bar">
+          <img src="./AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" style="width:100% " alt="">
         </div>
-       
+        <div class="partners">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy & Terms</a>
+          <a href="#">Ad Choice</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business Services</a>
+          <a href="#">Get the Linkedin app</a>
+          <a href="#">More</a>
+          <div class="copyright">
+            <h4>Linked</h4><img src="./R.png" alt="">
+            <p> LinkedIn Corporation © 2022</p>
+          </div>
+        
+        </div>
       </div>
     </div>
 
@@ -423,6 +427,7 @@
 
     function toggleMenu(){
       document.getElementById("list-menu").classList.toggle("show");
+      // document.querySelector("active-box").style.zIndex="-1"; 
     }
     </script>
 </html>
